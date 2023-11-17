@@ -59,11 +59,6 @@ header {
 	height: 100%;
 }
 
-header h1 {
-	font-size: 2rem;
-	font-weight: 400;
-}
-
 header nav {
 	display: flex;
 	flex-direction: column;
@@ -116,33 +111,35 @@ a:hover {
 }
 
 /* Headings */
-h1 {
-	margin-bottom: 0;
-}
-
 /* BIO SUB PAGE MAIN */
 
-#subpage-bio {
-	grid-column: 1 / 3;
-	margin: 4rem 10%;
-	border: 0;
-	padding: 0;
-}
 
-#subpage-bio h1 {
+h1 {
 	font-weight: normal;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: 2rem;
+  	margin-bottom: 0;
 }
 
-#subpage-bio div {
-	margin-bottom: 2rem;
+h2 {
+  	font-weight: normal;
+	text-transform: uppercase;
+	font-size: 2rem;
+  	margin-bottom: 0;
+    font-family: var(--primary-font);
 }
 
-#subpage-bio ul li {
+ul {
+  padding: 0;
+  margin: 1rem 0;
+}
+
+ul li {
 	list-style: none;
 	padding: 0;
 }
+
+
 /* Body Text */
 section {
 	border-right: 1px dashed var(--text-color);
@@ -160,16 +157,6 @@ p {
 /* BIO SUB PAGE MAIN */
 
 /* Images */
-figure {
-	float: left;
-	width: 15em;
-	max-width: 100%;
-	margin-left: 0;
-}
-
-figure::after {
-	clear: both;
-}
 
 img {
 	width: 100%;
@@ -185,11 +172,6 @@ img:focus {
 	transition: 0.5s;
 }
 
-figcaption {
-	font-style: italic;
-	font-size: 0.8em;
-}
-
 /* Footer */
 
 /* Breakpoint */
@@ -200,7 +182,7 @@ figcaption {
 
 	header {
 		border-right: 0;
-		border-bottom: 1px solid red;
+		border-bottom: 1px solid var(--text-color);
 	}
 
 	nav {
