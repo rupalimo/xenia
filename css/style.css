@@ -65,7 +65,7 @@ header {
 
 header p {
 	font-size: 2rem;
-	margin: 0.6rem 0 0.3rem 0;
+	/* margin: 0.6rem 0 0.3rem 0; */
 	font-family: var(--secondary-font);
 	width: 100%;
 	text-align: center;
@@ -153,7 +153,7 @@ article+article	 {
 	margin: 4rem 0;
 }
 .verticalscroll .bio p:first-of-type {
-	margin-top: 0;
+	margin-top: 1rem;
 }
 
 p {
@@ -172,7 +172,21 @@ img {
 
 img:hover,
 img:focus {
-	opacity: 0.25;
+	opacity: 0;
+	transition-timing-function: ease-in;
+	transition: 0.5s;
+}
+
+video {
+	opacity: 1;
+	transition-timing-function: ease-out;
+	transition: 0.5s;
+}
+
+
+video:hover,
+video:focus {
+	opacity: 0;
 	transition-timing-function: ease-in;
 	transition: 0.5s;
 }
@@ -188,8 +202,8 @@ footer {
 	transform: translate(-50%, -50%);
 }
 
-footer img {
-	width: 200px;
+footer video {
+	width: 240px;
 	height: auto;
 }
 
