@@ -155,7 +155,7 @@ article + article {
 }
 
 .current a p {
-	margin: 0;
+	margin: 0 0.5rem;
 }
 
 .current .current__date {
