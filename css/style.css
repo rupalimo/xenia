@@ -152,49 +152,45 @@ article + article {
 }
 
 /* current MAIN */
+
 .current a, .past li {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: baseline;
+	vertical-align:baseline;
 }
 
-.current a p, .past li p {
-	margin: 0 0.5rem;
+.current a p, .past li span {
+	margin: 0 0.25rem;
 }
 
-.current__date {
+.current a:hover {
+	color: var(--green-color)
+}
+
+.current .current__title {
+	margin-top: 0.3rem;
+}
+.current__date, .past__date {
 	font-family: var(--date-font);
 	font-size: 1.6rem;
 }
 
-.current__date::after {
+.current__date::after, .past__date::after {
 content: '.'
 }
 
-.current__title {
+.current__title, .past__title {
 	font-family: var(--title-font);
 }
-/* 
-.current__title::before {
-	content: '"'
-}
 
-.current__title::after {
-	content: '"'
-} */
-
-.current__location {
+.current__location, .past__location {
 	font-family: var(--location-font);
 		font-size: 1.6rem;
 }
 
-.current__location::before  {
+.current__location::before, .past__location::before  {
 	content: '('
 }
 
-.current__location::after {
+.current__location::after, .past__location::after {
 	content: ')'
 }
 
