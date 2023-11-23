@@ -49,8 +49,8 @@
 	font-style: normal;
 }
 
-@font-face {
-	font-family: 'Cardo Regular';
+/* @font-face {
+	font-family: 'Cardo';
 	src: url('../fonts/Cardo-Regular.ttf');
 }
 
@@ -62,4 +62,23 @@
 @font-face {
 	font-family: 'Cardo Bold';
 	src: url('../fonts/Cardo-Bold.ttf');
+} */
+
+@font-face {
+	font-family: 'Avara';
+	src: url('../fonts/Avara-Bold.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avara Italic';
+	src: url('../fonts/Avara-BoldItalic.woff2') format('woff2');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Cirrus Cumulus';
+	src: url('../fonts/CirrusCumulus.otf');
 }
