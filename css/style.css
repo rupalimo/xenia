@@ -150,6 +150,11 @@ section:last-of-type {
 article + article {
 	margin: 4rem 0;
 }
+
+article:last-of-type {
+	margin: 2rem 0;
+}
+
 .verticalscroll .bio p:first-of-type {
 	margin-top: 1rem;
 }
@@ -198,14 +203,18 @@ article + article {
 }
 .current__date,
 .past__date,
-.awards__date, .residency__date, .fairs__date {
+.awards__date,
+.residency__date,
+.fairs__date {
 	font-family: var(--date-font);
 	font-size: 1.6rem;
 }
 
 .current__date::after,
 .past__date::after,
-.awards__date::after, .residency__date::after, .fairs__date::after {
+.awards__date::after,
+.residency__date::after,
+.fairs__date::after {
 	content: '.';
 }
 
@@ -215,18 +224,27 @@ article + article {
 }
 
 .current__location,
-.past__location, .awards__location, .fairs__location, .residency__location {
+.past__location,
+.awards__location,
+.fairs__location,
+.residency__location {
 	font-family: var(--location-font);
 	font-size: 1.6rem;
 }
 
 .current__location::before,
-.past__location::before, .awards__location::before, .fairs__location::before, .residency__location::before {
+.past__location::before,
+.awards__location::before,
+.fairs__location::before,
+.residency__location::before {
 	content: '(';
 }
 
 .current__location::after,
-.past__location::after, .awards__location::after, .fairs__location::after, .residency__location.residency__location::after {
+.past__location::after,
+.awards__location::after,
+.fairs__location::after,
+.residency__location.residency__location::after {
 	content: ')';
 }
 
@@ -294,24 +312,28 @@ footer video {
 	border-radius: 10rem;
 	padding: 10px;
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 }
 .website-credits h2 {
 	margin: 0;
 	font-size: 1rem;
+	padding: 0 1rem;
 }
 .website-credits a {
 	margin: 0;
 	font-size: 1rem;
+	padding-right: 1rem;
 }
+
 
 .website-credits a:hover {
 	text-decoration: underline;
 	text-underline-offset: 4px;
+	color: var(--orange-color);
 }
 
-.website-credits p {
-	margin: 0.5rem 0;
+.website-credits a p {
+	margin: 0;
 }
 
 /* Breakpoint */
