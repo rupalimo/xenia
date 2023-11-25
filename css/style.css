@@ -311,7 +311,7 @@ footer video {
 }
 
 .website-credits {
-	border: 1px solid var(--text-color);
+	border: 3px solid var(--text-color);
 	border-radius: 10rem;
 	padding: 1rem;
 	display: flex;
