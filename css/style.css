@@ -8,9 +8,9 @@
 	--title-font: 'Avara Italic', sans-serif;
 	--location-font: 'PP Neue Thin', sans-serif;
 	--text-color: #000;
-	--orange-color: rgb(247, 88, 3);
-	--turquoise-color: #1bcfdc;
-	--green-color: rgb(103, 205, 85);
+	--orange-color: rgb(255, 0, 242);
+	--turquoise-color: #9d03ef;
+	--green-color: rgb(70, 239, 40);
 	--fade-in-effect: fadein 800ms;
 	font-size: calc(1em + 0.5vw);
 	font-family: var(--secondary-font);
@@ -32,6 +32,51 @@
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
+}
+
+@keyframes Color {
+	0% {
+		color: var(--text-color);
+	}
+	50% {
+		color: var(--turquoise-color);
+	}
+	80% {
+		color: var(--turquoise-color);
+	}
+	100% {
+		color: var(--text-color);
+	}
+}
+
+@-moz-keyframes Color {
+	0% {
+		color: var(--text-color);
+	}
+	50% {
+		color: var(--turquoise-color);
+	}
+	80% {
+		color: var(--turquoise-color);
+	}
+	100% {
+		color: var(--text-color);
+	}
+}
+
+@-webkit-keyframes Color {
+	0% {
+		color: var(--text-color);
+	}
+	50% {
+		color: var(--turquoise-color);
+	}
+	80% {
+		color: var(--turquoise-color);
+	}
+	100% {
+		color: var(--text-color);
+	}
 }
 
 ::selection {
@@ -94,11 +139,28 @@ a {
 	color: var(--text-color);
 	font-weight: normal;
 	text-decoration: none;
+
 }
 
 a:focus,
 a:hover {
 	cursor: help;
+}
+
+.past a {
+	animation: Color 3s ease-in-out infinite;
+}
+
+.past a:hover {
+color: var(--turquoise-color);
+animation: none;
+}
+
+.past a:hover::after, .past a:hover::before  {
+color: var(--turquoise-color);
+content: "♥";
+font-size: 0.85rem;
+vertical-align: middle;
 }
 
 /* Headings */
@@ -266,34 +328,15 @@ video:focus {
 	transition: 0.5s;
 }
 
-/* Footer */
-
-/* footer {
+video {
+	width: 240px;
+	height: auto;
 	position: fixed;
 	z-index: 1000;
 	cursor: default;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-}
-
-footer video {
-	width: 240px;
-	height: auto;
-} */
-
-#video {
-	position: fixed;
-	z-index: 1000;
-	cursor: default;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
-#video video {
-	width: 240px;
-	height: auto;
 }
 
 .website-credits {
@@ -346,8 +389,7 @@ footer video {
 
 .website-credits a:hover {
 	color: var(--green-color);
-
-	transition: 0.15s linear;
+	text-decoration: none;
 }
 
 /* Breakpoint */
@@ -418,6 +460,6 @@ footer video {
 	}
 
 	.website-credits {
-	margin: 0 0 4rem 0;
-}
+		margin: 0 0 4rem 0;
+	}
 }
