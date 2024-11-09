@@ -147,7 +147,7 @@ a:hover {
 	cursor: help;
 }
 
-.past a {
+.past .active {
 	animation: Color 3s ease-in-out infinite;
 }
 
